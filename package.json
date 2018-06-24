@@ -1,0 +1,17 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jonathan Sharpe <mail@jonrshar.pe>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  },
+  "dependencies": {
+    "markdown": "0.5.0"
+  }
+}
