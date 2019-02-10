@@ -1,7 +1,5 @@
-import { markdown } from 'markdown';
+import marked from "marked";
 
-fetch('../README.md')
-  .then(result => result.text())
-  .then(body => {
-    document.getElementById('app').innerHTML = markdown.toHTML(body);
-  });
+import markup from "../README.md";
+
+document.getElementById("app").innerHTML = marked(markup);
