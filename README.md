@@ -21,11 +21,14 @@ Test-Driven Development
 The rules of test-driven development (TDD) are as follows:
 
  1. **Red**: Always start with a failing test, in this case:
- 
-         java.lang.AssertionError: 
-         Expected: "1"
-              but: was null
-              
+
+    ```
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "1"
+    Received: null
+    ```
+
     Pro tip: *always read the error* before moving on to the next step, it may not be what you were expecting.
 
  2. **Green**: Write the simplest code required to make the test pass; then
